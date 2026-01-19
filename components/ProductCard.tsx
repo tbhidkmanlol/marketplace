@@ -1,6 +1,13 @@
 // src/components/ProductCard.tsx
+type Product={
+  id: number;
+  name: string;
+  price: number;
+  description: string;
+  stock_qty: number;
+}
 
-export default function ProductCard({ product }: { product: any }) {
+export default function ProductCard({ product }: { product: Product }) {
   return (
     <div className="border rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow bg-white">
       <div className="h-40 bg-gray-100 rounded-md mb-4 flex items-center justify-center">
