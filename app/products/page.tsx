@@ -8,6 +8,7 @@ type Product = {
   price: number;
   description: string;
   stock_qty: number;
+  image_url?: string;
 }
 export default async function Home() {
   // 1. Fetching the data from Supabase

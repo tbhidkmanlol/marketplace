@@ -8,6 +8,7 @@ type Product = {
     price: number
     description: string
     stock_qty: number
+    image_url?: string
 }
 
 export default function SearchBar({ products }: { products: Product[] }) {
@@ -37,8 +38,16 @@ export default function SearchBar({ products }: { products: Product[] }) {
                     <div key={product.id} className="bg-white dark:bg-gray-900 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-md transition-shadow">
 
                         {/* Product Image/Icon Area */}
-                        <div className="h-48 bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center">
-                            <span className="text-5xl">📦</span>
+                        <div className="h-48 bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center overflow-hidden text-gray-900 dark:text-white">
+                            {product.image_url ? (
+                                <img
+                                    src={product.image_url}
+                                    alt={product.name}
+                                    className="w-full h-full object-cover"
+                                />
+                            ) : (
+                                <span className="text-5xl">📦</span>
+                            )}
                         </div>
 
                         {/* Product Details Section */}

@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-950">
+    <main className="min-h-screen bg-linear-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-950">
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-20 text-center">
         {/* Main Heading */}
@@ -60,33 +60,33 @@ export default function Home() {
       </div>
       {/* Testimonials Section */}
       <div className="mt-20 max-w-4xl mx-auto pb-20">
-        <h2 className="text-3xl font-bold text-center mb-10">
+        <h2 className="text-3xl font-bold text-center mb-10 text-gray-600 dark:text-gray-400">
           This is what our customers have to say about us!
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Review 1 */}
-          <div className="p-6 bg-white dark:bg-gray-800 rounded-xl">
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-xl text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700">
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               "bro this thing fucking sucks 0/10"
             </p>
             <p className="font-semibold">- Sarah M.</p>
           </div>
           {/* Review 2 */}
-          <div className="p-6 bg-white dark:bg-gray-800 rounded-xl">
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-xl text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700">
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               "dont buy products from them it sucks so much man"
             </p>
             <p className="font-semibold">- John D.</p>
           </div>
            {/* Review 3 */}
-          <div className="p-6 bg-white dark:bg-gray-800 rounded-xl">
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-xl text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700">
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             </p>
             <p className="font-semibold">- Lorem I.</p>
           </div>
            {/* Review 4 */}
-          <div className="p-6 bg-white dark:bg-gray-800 rounded-xl">
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-xl text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700">
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               "lowkey ignore the other reviews this shop is 11/10 legit"
             </p>
