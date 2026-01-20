@@ -131,8 +131,5 @@ marketplace/
 - User authentication & accounts
 - Order history per user
 - Product reviews & ratings
-- Wishlist functionality
-- Email notifications
-- Payment gateway integration (Stripe, PayPal)
 - Admin dashboard for product management
 - Inventory analytics
