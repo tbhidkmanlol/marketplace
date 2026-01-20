@@ -1,8 +1,10 @@
 import Link from "next/link"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-linear-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-950">
+    <>
+      <main className="bg-linear-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-950">
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-20 text-center">
         {/* Main Heading */}
@@ -94,6 +96,23 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main>
+
+      {/* About Us Section - Link to full page */}
+      <section className="bg-slate-100 dark:bg-slate-900 py-12 px-4 text-center">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">Learn More About Us</h2>
+          <p className="text-slate-600 dark:text-slate-400 mb-6">
+            Discover our story, mission, and commitment to delivering the best tech products
+          </p>
+          <Link href="/about">
+            <button className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition duration-200">
+              Read Our Story →
+            </button>
+          </Link>
+        </div>
+      </section>
+      </main>
+      <Footer />
+    </>
   )
 }
