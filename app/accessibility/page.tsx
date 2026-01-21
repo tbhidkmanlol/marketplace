@@ -5,8 +5,8 @@ export default function AccessibilityPage() {
     return (
         <>
             <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 dark:from-slate-950 dark:to-slate-900 py-12 px-4">
-            <div className="max-w-4xl mx-auto">
-                {/* Header */}
+                <div className="max-w-4xl mx-auto">
+                    {/* Header */}
                 <div className="mb-12">
                     <Link href="/" className="text-slate-400 hover:text-slate-300 text-sm transition">
                         ← Back to Home
@@ -67,6 +67,7 @@ export default function AccessibilityPage() {
                             We regularly test our website with accessibility tools and user feedback to identify and fix issues. Your feedback helps us improve our accessibility efforts.
                         </p>
                     </section>
+                </div>
                 </div>
             </div>
             <Footer />
