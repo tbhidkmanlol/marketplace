@@ -1,6 +1,7 @@
 import { supabase } from '@/lib/supabase'
 import AddToCartButton from '@/components/AddToCart'
 import SearchBar from '@/components/SearchBar'
+import Footer from '@/components/Footer'
 
 type Product = {
   id: number;
@@ -17,16 +18,19 @@ export default async function Home() {
     .select('*')
 
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-950 p-8 transition-colors">
-      {/* 2. Page Header - Added dark:text classes here */}
-      <header className="mb-12 text-center">
-        <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white">
-          Product Listing
-        </h1>
-      </header>
+    <>
+      <main className="min-h-screen bg-gray-50 dark:bg-gray-950 p-8 transition-colors">
+        {/* 2. Page Header - Added dark:text classes here */}
+        <header className="mb-12 text-center">
+          <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white">
+            Product Listing
+          </h1>
+        </header>
 
-      {/* SearchBar handles everything: search input, count, grid, empty state */}
-      <SearchBar products={products || []} />
-    </main>
+        {/* SearchBar handles everything: search input, count, grid, empty state */}
+        <SearchBar products={products || []} />
+      </main>
+      <Footer />
+    </>
   )
 }
