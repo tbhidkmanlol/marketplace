@@ -11,7 +11,6 @@ A full-stack e-commerce marketplace built with Next.js, React, TypeScript, Tailw
 - **Database Integration**: Supabase PostgreSQL for orders, order items, and products
 - **Stock Management**: Automatic stock updates after purchase
 - **Dark Mode**: Full dark/light theme support with Tailwind CSS
-- **Responsive Design**: Mobile-friendly UI with Tailwind CSS grid system
 
 ## Tech Stack
 
@@ -25,7 +24,7 @@ A full-stack e-commerce marketplace built with Next.js, React, TypeScript, Tailw
 ## Getting Started
 
 ### Prerequisites
-- Node.js 16+
+- Node.js 18+
 - Supabase account
 
 ### Installation
@@ -129,7 +128,5 @@ marketplace/
 ## Future Enhancements
 
 - User authentication & accounts
-- Order history per user
 - Product reviews & ratings
 - Admin dashboard for product management
-- Inventory analytics
